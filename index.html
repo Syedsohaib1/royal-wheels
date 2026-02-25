@@ -6,80 +6,89 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Poppins', sans-serif;
-      background: #f8f9fa;
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      color: white;
+      overflow-x: hidden;
     }
 
     header {
-      background: linear-gradient(to right, black, #1a1a1a);
-      color: gold;
-      padding: 20px;
       text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 32px;
+      font-size: 42px;
+      color: gold;
+      margin-bottom: 10px;
     }
 
-    nav {
-      text-align: center;
-      background: #111;
-      padding: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 14px;
-    }
-
-    .hero {
-      background: url('IMG20250813105240.jpg') center/cover no-repeat;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 8px black;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    .card {
-      background: white;
-      margin: 15px auto;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 400px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    header p {
+      color: #ccc;
     }
 
     .btn {
       display: inline-block;
-      padding: 12px 25px;
-      margin: 10px;
+      padding: 12px 30px;
+      margin: 20px 10px;
       background: gold;
       color: black;
       text-decoration: none;
-      font-weight: bold;
       border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: white;
+      transform: scale(1.05);
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: slideUp 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 15px;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255,255,255,0.15);
     }
 
     footer {
-      background: black;
-      color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      padding: 20px;
+      background: #000;
+      margin-top: 40px;
+      color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
   </style>
@@ -90,37 +99,29 @@
 <header>
   <h1>Royal Wheels 👑</h1>
   <p>Premium Cab Service | Jharkhand • Bihar • West Bengal</p>
+  <a href="tel:+918747855875" class="btn">Call Now</a>
+  <a href="https://wa.me/918747855875" class="btn">WhatsApp</a>
 </header>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">Services</a>
-  <a href="#">Pricing</a>
-  <a href="#">Contact</a>
-</nav>
+<div class="section">
+  <h2>Our Services</h2>
 
-<div class="hero">
-  Safe • Comfortable • On Time Travel
+  <div class="card">
+    ✔ One Way & Round Trips  
+  </div>
+
+  <div class="card">
+    ✔ Dhanbad ↔ Kolkata Special Route  
+  </div>
+
+  <div class="card">
+    ✔ Airport & Corporate Travel  
+  </div>
+
 </div>
 
-<section>
-  <div class="card">
-    <h2>Our Services</h2>
-    <p>✔ One Way & Round Trips</p>
-    <p>✔ Dhanbad ↔ Kolkata Special Route</p>
-    <p>✔ Airport Transfers</p>
-    <p>✔ Corporate Travel</p>
-  </div>
-
-  <div class="card">
-    <h2>Book Your Ride</h2>
-    <a class="btn" href="tel:+918747855875">Call Now</a>
-    <a class="btn" href="https://wa.me/918747855875">WhatsApp</a>
-  </div>
-</section>
-
 <footer>
-  © 2026 Royal Wheels. All Rights Reserved.
+  © 2026 Royal Wheels | All Rights Reserved
 </footer>
 
 </body>
