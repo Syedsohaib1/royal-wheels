@@ -1,161 +1,185 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Royal Wheels</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<title>Royal Wheels</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-                  url('IMG20250813105240.jpg') no-repeat center center/cover;
-      color: white;
-    }
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url('IMG20250813105240.jpg') no-repeat center center/cover;
+color:white;
+}
 
-    header {
-      text-align: center;
-      padding: 70px 20px;
-      animation: fadeIn 1.5s ease-in-out;
-    }
+header{
+text-align:center;
+padding:70px 20px;
+animation:fadeIn 1.5s ease-in-out;
+}
 
-    header h1 {
-      font-size: 42px;
-      color: gold;
-      margin-bottom: 10px;
-    }
+header h1{
+font-size:42px;
+color:gold;
+margin-bottom:10px;
+}
 
-    header p {
-      color: #ddd;
-      margin-bottom: 20px;
-    }
+header p{
+color:#ddd;
+margin-bottom:20px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      margin: 10px;
-      background: gold;
-      color: black;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
+.btn{
+display:inline-block;
+padding:12px 28px;
+margin:10px;
+background:gold;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s ease;
+}
 
-    .btn:hover {
-      background: white;
-      transform: scale(1.05);
-    }
+.btn:hover{
+background:white;
+transform:scale(1.05);
+}
 
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-      animation: slideUp 1.5s ease;
-    }
+.section{
+padding:60px 20px;
+text-align:center;
+animation:slideUp 1.5s ease;
+}
 
-    .card {
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(8px);
-      padding: 30px;
-      margin: 20px auto;
-      max-width: 400px;
-      border-radius: 15px;
-      transition: 0.3s ease;
-    }
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(8px);
+padding:30px;
+margin:20px auto;
+max-width:400px;
+border-radius:15px;
+transition:0.3s ease;
+}
 
-    .card:hover {
-      transform: translateY(-10px);
-      background: rgba(255,255,255,0.15);
-    }
+.card:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.15);
+}
 
-    .social-icons img {
-      width: 45px;
-      margin: 12px;
-      transition: 0.3s;
-    }
+input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border-radius:8px;
+border:none;
+}
 
-    .social-icons img:hover {
-      transform: scale(1.2);
-    }
+.social-icons img{
+width:45px;
+margin:12px;
+transition:0.3s;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #000;
-      margin-top: 40px;
-      color: #aaa;
-    }
+.social-icons img:hover{
+transform:scale(1.2);
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+margin-top:40px;
+color:#aaa;
+}
 
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(-20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes slideUp{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Royal Wheels 👑</h1>
-  <p>Premium Cab Service | Jharkhand • Bihar • West Bengal</p>
+<h1>Royal Wheels 👑</h1>
+<p>Premium Cab Service | Jharkhand • Bihar • West Bengal</p>
 
-  <a href="tel:+918747855875" class="btn">📞 Call Now</a>
-  <a href="https://wa.me/917855875795" class="btn">💬 WhatsApp</a>
+<a href="tel:+918747855875" class="btn">📞 Call Now</a>
+<a href="https://wa.me/917855875795" class="btn">💬 WhatsApp</a>
 </header>
 
 <div class="section">
-  <h2>Our Services</h2>
+<h2>Our Services</h2>
 
-  <div class="card">
-    ✔ One Way & Round Trips
-  </div>
-
-  <div class="card">
-    ✔ Dhanbad • Bihar • Kolkata Special Route
-  </div>
-
-  <div class="card">
-    ✔ Airport & Corporate Travel
-  </div>
+<div class="card">✔ One Way & Round Trips</div>
+<div class="card">✔ Dhanbad • Bihar • Kolkata Special Route</div>
+<div class="card">✔ Airport & Corporate Travel</div>
 </div>
 
 <div class="section">
-  <h2>Connect With Us</h2>
+<h2>Book Your Ride</h2>
 
-  <div class="social-icons">
+<form onsubmit="sendToWhatsApp(); return false;" style="max-width:400px;margin:auto;">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="phone" placeholder="Your Phone Number" required>
+<input type="text" id="pickup" placeholder="Pickup Location" required>
+<input type="text" id="drop" placeholder="Drop Location" required>
+<input type="date" id="date" required>
+<button type="submit" class="btn" style="width:100%;">Book via WhatsApp</button>
+</form>
+</div>
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/917855875795" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-    </a>
+<div class="section">
+<h2>Connect With Us</h2>
 
-    <!-- YouTube -->
-    <a href="https://www.youtube.com/@royalsyedsohaib2795" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
-    </a>
+<div class="social-icons">
+<a href="https://wa.me/917855875795" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
 
-    <!-- Instagram -->
-    <a href="https://instagram.com/royal_wheelsofficial" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png">
-    </a>
+<a href="https://www.youtube.com/@royalsyedsohaib2795" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+</a>
 
-  </div>
+<a href="https://instagram.com/royal_wheelsofficial" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png">
+</a>
+</div>
 </div>
 
 <footer>
-  © 2026 Royal Wheels | All Rights Reserved
+© 2026 Royal Wheels | All Rights Reserved
 </footer>
+
+<script>
+function sendToWhatsApp(){
+var name=document.getElementById("name").value;
+var phone=document.getElementById("phone").value;
+var pickup=document.getElementById("pickup").value;
+var drop=document.getElementById("drop").value;
+var date=document.getElementById("date").value;
+
+var message="Royal Wheels Booking:%0A"
++"Name: "+name+"%0A"
++"Phone: "+phone+"%0A"
++"Pickup: "+pickup+"%0A"
++"Drop: "+drop+"%0A"
++"Date: "+date;
+
+var whatsappURL="https://wa.me/917855875795?text="+message;
+window.open(whatsappURL,"_blank");
+}
+</script>
 
 </body>
 </html>
