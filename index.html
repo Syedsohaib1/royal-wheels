@@ -1,90 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Royal Wheels</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
+  <title>Royal Wheels</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-        header {
-            background: black;
-            color: gold;
-            padding: 25px;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+    }
 
-        h1 {
-            margin: 0;
-            font-size: 32px;
-        }
+    header {
+      background: linear-gradient(to right, black, #1a1a1a);
+      color: gold;
+      padding: 20px;
+      text-align: center;
+    }
 
-        section {
-            padding: 20px;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
 
-        .card {
-            background: white;
-            margin: 15px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+    nav {
+      text-align: center;
+      background: #111;
+      padding: 10px;
+    }
 
-        .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 20px;
-            background: gold;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 14px;
+    }
 
-        footer {
-            background: black;
-            color: white;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+    .hero {
+      background: url('car1.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px black;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      margin: 15px auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+    }
+
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+  </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Royal Wheels 👑</h1>
-    <p>Cab Service Across Jharkhand, Bihar & West Bengal</p>
+  <h1>Royal Wheels 👑</h1>
+  <p>Premium Cab Service | Jharkhand • Bihar • West Bengal</p>
 </header>
 
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Services</a>
+  <a href="#">Pricing</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+  Safe • Comfortable • On Time Travel
+</div>
+
 <section>
-    <div class="card">
-        <h2>Our Services</h2>
-        <p>✔ One Way Trips</p>
-        <p>✔ Round Trips</p>
-        <p>✔ Airport Pickup & Drop</p>
-        <p>✔ Corporate Travel</p>
-    </div>
+  <div class="card">
+    <h2>Our Services</h2>
+    <p>✔ One Way & Round Trips</p>
+    <p>✔ Dhanbad ↔ Kolkata Special Route</p>
+    <p>✔ Airport Transfers</p>
+    <p>✔ Corporate Travel</p>
+  </div>
 
-    <div class="card">
-        <h2>Dhanbad ↔ Kolkata Special Route</h2>
-        <p>Safe • Comfortable • On Time</p>
-        <p>Affordable Pricing & Professional Drivers</p>
-    </div>
-
-    <div class="card">
-        <h2>Book Now</h2>
-        <a class="btn" href="tel:+918747855875">📞 Call Now</a>
-        <a class="btn" href="https://wa.me/918747855875">💬 WhatsApp</a>
-    </div>
+  <div class="card">
+    <h2>Book Your Ride</h2>
+    <a class="btn" href="tel:+918747855875">Call Now</a>
+    <a class="btn" href="https://wa.me/918747855875">WhatsApp</a>
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 Royal Wheels. All Rights Reserved.</p>
+  © 2026 Royal Wheels. All Rights Reserved.
 </footer>
 
 </body>
